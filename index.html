@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For My Favorite Person ❤️</title>
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+
+    <div id="start-screen" class="screen">
+        <button id="start-btn">Press to Start ❤️</button>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+        <video id="bg-video" loop muted playsinline preload="auto" style="opacity: 0; transition: opacity 0.5s;">
+            <source src="asset/gf_video.mp4" type="video/mp4">
+        </video>
+        
+        <div class="ui-overlay">
+            <h1>Will you be my Valentine?</h1>
+            <div class="btn-group">
+                <button id="yes-btn">YES</button>
+            </div>
+        </div>
+
+        <button id="no-btn">NO</button>
+    </div>
+
+    <div id="win-screen" class="screen hidden">
+        <img src="asset/us.jpeg" id="couple-photo">
+        <div class="certificate">
+            <div class="cert-border">
+                <p>📜 OFFICIAL DECREE</p>
+                <h1 class="gf-name">Best Girlfriend Paruliaaaaa</h1>
+                <p>Awarded by your favorite person</p>
+                <div class="seal">❤️</div>
+            </div>
+        </div>
+        <div id="hearts-container"></div>
+    </div>
+
+    <audio id="bg-music" src="asset/music.mp3" loop></audio>
+    <audio id="sad-sound" src="asset/trombone.mp3"></audio>
+
+    <script src="asset/script.js"></script>
+</body>
+</html>
